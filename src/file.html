@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FileHistory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    	<div align="center" class="top">
+            <div align="center" class="title">コントラクトについて</div>
+        </div>
+    </header>
+    <div align="center" class="ContractState" id="ContractState">
+        <div align="center" class="titleContractState">最新ファイルについて</div>
+        <div align="center" id="lastestFile" class="lastestFile"></div>
+        <button class="registerButton" onclick="syncLastestFile()">最新の状態を取得</button>
+    </div>
+    <div align="center" class="updateFile" id="updateFile">
+        <div class="titleUpdateFile">ファイルの更新</div>
+    	<input type="file" class="selectFile" id="selectFile">
+        <br>
+    	<button class="registerButton" onclick="updateFile()">更新</button>
+    </div>
+    <!-- <div align="center" class="fileHistory">
+        <div>ファイルの更新履歴</div>
+        <button onclick="getFileHistory()">更新履歴の取得</button>
+        <div align="center" id="fileHistory"></div>
+    </div> -->
+    <div align="center" class="checkFile" id= "checkFile">
+        <div class="titlecheckFile">ハッシュ値の検証</div>
+        <input type="file" class="selectFile" id="selectcheckFile"><br>
+        <!-- <button class="registerButton" onclick="checkFile()">検証</button> -->
+    </div>
+    <div align="center" class="admin">
+        <div class="titleAdmin">管理者権限</div>
+    <div align="center">
+        <div class="titleaddAdmin">管理者権限の付与</div>
+        <input type="text" class="addAddress" id="addAddress" size="50">
+        <button class="registerButton" onclick="addUpdater()">付与</button>
+    </div>
+    <div align="center">
+        <div class="titledeleteAdmin">管理者権限の削除</div>
+        <input type="text" class="removeAddress" id="removeAddress" size="50">
+        <button class="registerButton" onclick="removeUpdater()">削除</button>
+    </div>
+    <div align="center" class="deleteContarct" id="deleteContract">
+        <button class="registerButton" class="deleteContract" onclick="deleteContract()">コントラクトの削除</button>
+    </div>
+    </div>
+    <script src="file.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FileHistory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    	<h1 align="center">FileHistory</h1>
+    </header>
+    <div align="center" class="newFile">
+    	ファイルの新規登録
+        <br>
+    	<input type="file" class="selectFile" id="selectFile">
+        <br>
+        <input type="text" class="contactName" id="contactName" size="50">
+    	<button class="registerButton" onclick="resisterFile()">新規登録</button>
+    </div>
+    <div align="center" id="contractList" class="contractList">
+        <div align="center">コントラクト一覧</div> 
+        <button class="registerButton" onclick="getContracts()">最近のコントラクトの取得</button>
+    	<div class="contract" id="contract"></div>
+        <div align="center" id="filePage">
+            <input type="text" class="contactAddress" id="contactAddress" size="75">
+            <button class="registerButton" onclick="change()">個別のコントラクトへ</button>
+        </div>
+    </div>
+    
+    <div align="center" class="deleteContract">
+        <button class="registerButton" class="delete" align="center" onclick="deleteContract()">コントラクトの削除</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
